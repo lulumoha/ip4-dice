@@ -1,0 +1,14 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #000000, #ff6699
+, #ff1a1a, #009933, #009999);
+}
+.roll-dice {
+  display: none;
+}
+pre{
+  color:white;
+  font-weight: bolder;
+  background-color: black;
+  margin-top: 20px;
+}
