@@ -22,3 +22,10 @@ Player.prototype.rollone = function() {
   this.score += this.roll;
   }
 }
+
+//hold
+Player.prototype.hold = function () {
+  this.totalscore += this.score;
+  this.score = 0;
+  alert("your scores are held, pass the Dice" + " " + this.playerName);
+}
