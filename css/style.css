@@ -12,3 +12,12 @@ pre{
   background-color: black;
   margin-top: 20px;
 }
+
+#header{background-image: url("../image/imagesample.gif");
+border-radius: 5px;
+						margin:20px;
+						background-size:contain;
+						background-repeat: no-repeat;
+						color :white;
+						text-align:center;
+                    						}
