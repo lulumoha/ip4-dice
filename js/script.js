@@ -48,3 +48,17 @@ var clearValues = function(){
   $(".player1Name").val("");
   $(".player2Name").val("");
 }
+
+$(document).ready(function() {
+
+  $("button#start").click(function(event){
+    player1 = new Player(true);
+    player2 =  new Player(false);
+    $(".roll-dice").show();
+    $(".playernames").hide();
+
+    var player1Name = $(".player1Name").val();
+    $("#player1Name").text(player1Name);
+
+    var player2Name = $(".player2Name").val();
+    $("#player2Name").text(player2Name);
