@@ -62,8 +62,31 @@ $(document).ready(function() {
 
     var player2Name = $(".player2Name").val();
     $("#player2Name").text(player2Name);
-    
+
     player1.playerName=player1Name;
     player2.playerName=player2Name;
 
+     });
+
+     //roll dice
+     $("button#player1-roll").click(function(event){
+       player1.roll = throwdice();
+       $("#roll-1").text(player1.roll);
+       player1.rollone();
+       $("#round-total-1").text(player1.score);
+     });
+
+     $("button#player1-hold").click(function(event){
+       player1.hold();
+       $("#total-score-1").text(player1.totalscore);
+       $("#round-total-1").empty();
+       $("#roll-1").empty();
+       player1.winnerCheck();
+     });
+
+     $("button#player2-roll").click(function(event){
+       player2.roll = throwdice();
+       $("#roll-2").text(player2.roll);
+       player2.rollone();
+       $("#round-total-2").text(player2.score);
      });
