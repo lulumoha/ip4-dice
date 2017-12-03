@@ -29,3 +29,10 @@ Player.prototype.hold = function () {
   this.score = 0;
   alert("your scores are held, pass the Dice" + " " + this.playerName);
 }
+
+//check for 100
+Player.prototype.winnerCheck = function () {
+  if (this.totalscore >= 100) {
+    alert(this.playerName + " Winner!");
+  }
+}
